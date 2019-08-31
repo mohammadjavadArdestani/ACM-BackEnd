@@ -13,7 +13,6 @@ class CountrySerializer(serializers.ModelSerializer):
         fields = '__all__'
     
 class TeamSerializer(serializers.ModelSerializer):
-    country = serializers.PrimaryKeyRelatedField(many=False, read_only=True)
     class Meta:
         model = Team 
         # fields = '__all__'
